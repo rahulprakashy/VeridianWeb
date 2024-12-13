@@ -1,0 +1,88 @@
+import { useTheme } from "@mui/material";
+
+export const StyledTeamCard = () => {
+  const myTheme = useTheme();
+  return {
+    teamCardFirstGrid: { margin: { lg: "0px 70px" } },
+    teamCardFirstBox: {
+      height: { lg: "407px", xs: "845px" },
+      width: { lg: "1000px", md: "425px" },
+      backgroundColor: myTheme.colors.white,
+      transform: { lg: "skew(-25deg)" },
+      overflow: "hidden",
+    },
+    teamCardSecondGrid: {
+      display: "flex",
+      justifyContent: { lg: "center", xs: "auto" },
+      alignItems: { lg: "flex-end", xs: "center" },
+      height: { lg: "-webkit-fill-available", md: "845px" },
+      flexDirection: { lg: "row", xs: "column" },
+    },
+    teamCardSecondBox: {
+      position: "relative",
+      bottom: 0,
+      display: { lg: "flex", xs: "block" },
+      alignItems: { lg: "flex-end", xs: "unset" },
+    },
+    teamCardFirstImage: {
+      height: { lg: "fit-content", xs: "355px" },
+      width: { lg: "fit-content", sm: "425px", xs: "288px" },
+      transform: { lg: "skew(25deg)", xs: "none" },
+      borderRadius: 0,
+      zIndex: 3,
+      ".MuiAvatar-img": { objectFit: "contain" },
+    },
+    teamCardThirdBox: {
+      backgroundColor: myTheme.colors.primary.default,
+      height: "68px",
+      alignItems: "center",
+      display: "flex",
+      position: "relative",
+      bottom: 0,
+      padding: { lg: "0px 108px", xs: "0px" },
+      flexDirection: "column",
+      justifyContent: "center",
+      whiteSpace: "nowrap",
+      right: { lg: "40px", md: "40px", sm: "80px", xs: "110px" },
+      transform: { lg: "none", xs: "skew(-50deg)" },
+      width: { md: "95%", xs: "115%" },
+    },
+    teamCardFirstText: {
+      transform: { lg: "skew(25deg)", xs: "skew(50deg)" },
+      fontFamily: myTheme.typography.fontFamily.text1,
+      fontWeight: myTheme.typography.fontWeight.semiBold,
+      fontSize: myTheme.typography.fontSize.text18,
+      lineHeight: "22px",
+      color: myTheme.colors.white,
+    },
+    teamCardSecondText: {
+      transform: { lg: "skew(25deg)", xs: "skew(50deg)" },
+      fontFamily: myTheme.typography.fontFamily.text2,
+      fontWeight: myTheme.typography.fontWeight.medium,
+      fontSize: myTheme.typography.fontSize.text14,
+      lineHeight: "20px",
+      color: myTheme.colors.white,
+    },
+    teamCardFourthBox: {
+      width: { lg: "110%", xs: "auto" },
+      transform: { lg: "skew(25deg)", xs: "none" },
+      position: "relative",
+      padding: { lg: "40px 0px", xs: "8px 16px" },
+      rowGap: "10px",
+      display: "flex",
+      height: { lg: "-webkit-fill-available", xs: "auto" },
+      alignItems: "center",
+      flexDirection: "column",
+      justifyContent: "flex-start",
+      right: { lg: "120px", xs: "0px" },
+    },
+    teamCardThirdText: {
+      fontFamily: myTheme.typography.fontFamily.text2,
+      fontWeight: myTheme.typography.fontWeight.medium,
+      fontSize: myTheme.typography.fontSize.text16,
+      lineHeight: "21px",
+      textAlign: "left",
+      color: myTheme.textColor.tertiary,
+    },
+  };
+};

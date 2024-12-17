@@ -7,12 +7,11 @@ export const StyledTeamPage = () => {
     return{
         teamFirstGrid:{
             maxWidth: {lg:"1318px",md:"903px"},
-            maxHeight: "925px",
             width: "100%",
             height:"100%",
             backgroundColor: myTheme.colors.primary.lite,
             margin: "0px auto",
-            padding:{lg:"48px" , md:"16px"},
+            padding:{lg:"0px" , md:"16px"},
       
           },
           teamFirstText:{
@@ -23,9 +22,9 @@ export const StyledTeamPage = () => {
             fontFamily:myTheme.typography.fontFamily.text1,
           },
           teamFirstBox:{
-            maxWidth:{lg:"1308px",md:"903px" , sm:"736px"},
+            maxWidth:{lg:"1318px",md:"903px" , sm:"736px"},
             width:"100%",
-            height:{lg:"450px" , xs:"925px"},
+            height:{lg:"450px" ,},
             paddingTop:"32px"
           },
 

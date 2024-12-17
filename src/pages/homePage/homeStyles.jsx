@@ -61,6 +61,7 @@ export const StyledHome = () => {
       padding: "16px 32px",
       columnGap: "10px",
       borderRadius: "4px",
+      cursor:"pointer",
     },
     homeSecondText: {
       color: myTheme.colors.white,

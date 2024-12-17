@@ -55,6 +55,7 @@ export default function TopNav({ onNavigate, sections }) {
           fontSize="20px"
           fontWeight={600}
           flexDirection="column"
+          openTopNav={HandleOpenNavBar}
         />
       </Grid>
     </Grid>

@@ -6,9 +6,9 @@ export const StyledContactUsPage = () =>{
         contactFirstGrid:{
             backgroundColor: myTheme.colors.primary.default,
             margin: "auto",
-            height: "285px",
+            height: "17.813rem",
             position: "relative",
-            maxWidth: { lg: "1318px", md: "903px" },
+            maxWidth: { lg: "82.375rem", md: "56.438rem" },
           },
           contactSecondGrid:{
             display: "flex",
@@ -22,12 +22,12 @@ export const StyledContactUsPage = () =>{
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "space-evenly",
-            height: "285px",
+            height: "17.813rem",
           },
           contactFirstText:{
             fontWeight: myTheme.typography.fontWeight.bolder,
             fontSize: myTheme.typography.fontSize.text32,
-            lineHeight: "38px",
+            lineHeight: "2.375rem",
             textAlign: "center",
             fontFamily: myTheme.typography.fontFamily.text1,
             color: myTheme.colors.white,
@@ -35,7 +35,7 @@ export const StyledContactUsPage = () =>{
           contactSecondText:{
             fontWeight: myTheme.typography.fontWeight.medium,
             fontSize: myTheme.typography.fontSize.text14,
-            lineHeight: "20px",
+            lineHeight: "1.25rem",
             textAlign: "center",
             fontFamily: myTheme.typography.fontFamily.text2,
             color: myTheme.colors.white,
@@ -49,7 +49,7 @@ export const StyledContactUsPage = () =>{
             display: "flex",
             alignItems: "center",
             padding: "14px 24px",
-            columnGap: "10px",
+            columnGap: "0.625rem",
           },
           contactThirdText:{
             backgroundColor: "#F9C300",
@@ -62,7 +62,7 @@ export const StyledContactUsPage = () =>{
           contactFourthText:{
             fontWeight: myTheme.typography.fontWeight.bold,
             fontSize: myTheme.typography.fontSize.text18,
-            lineHeight: "20px",
+            lineHeight: "1.25rem",
             textAlign: "center",
             fontFamily: myTheme.typography.fontFamily.text2,
             color: myTheme.colors.white,
@@ -70,17 +70,17 @@ export const StyledContactUsPage = () =>{
           contactFirstImage:{
             borderRadius: 0,
             ".MuiAvatar-img": {
-              height: "15px",
-              width: "15px",
+              height: "0.938rem",
+              width: "0.938rem",
               overflow: "visible",
             },
             backgroundColor: "#0000002d",
-            padding: "10px",
+            padding: "0.625rem",
           },
           contactSecondImage:{
             borderRadius: 0,
-            height: "285px",
-            width: "386px",
+            height: "17.813rem",
+            width: "24.125rem",
             position: "absolute",
             left: 0,
             top: 0,
@@ -89,8 +89,8 @@ export const StyledContactUsPage = () =>{
           },
           contactThirdImage:{
             borderRadius: 0,
-            height: "285px",
-            width: "386px",
+            height: "17.813rem",
+            width: "24.125rem",
             position: "absolute",
             right: 0,
             top: 0,

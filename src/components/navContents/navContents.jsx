@@ -9,6 +9,7 @@ export default function NavContents({
   fontWeight,
   fontSize,
   flexDirection = "row",
+  openTopNav
 }) {
   const styles = StyledNavContents();
   const navContents = [
@@ -36,8 +37,8 @@ export default function NavContents({
     <Grid sx={{ ...styles.navContentsFirstGrid, flexDirection: flexDirection }}>
       {navContents.map((element, index) => {
         return (
-          <Box sx={styles.navContentsFirstBox}>
-            <Box key={index} sx={styles.navContentsSecondBox}>
+          <Box sx={styles.navContentsFirstBox} key={index}>
+            <Box sx={styles.navContentsSecondBox}>
               <Typography
                 sx={{
                   ...styles.navContentsFirstText,
@@ -48,6 +49,8 @@ export default function NavContents({
                 onClick={() => {
                   HandleIndex(index);
                   onNavigate(sections[element.link]);
+                  console.log(sections[element.link])
+                  openTopNav()
                 }}
               >
                 {element.head}

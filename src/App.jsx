@@ -8,6 +8,11 @@ import { Grid2, ThemeProvider } from '@mui/material';
 import { myTheme } from './themes';
 import RouterApp from './routers/router';
 import '@fontsource/ibm-plex-serif';
+import "@fontsource/dm-sans"; // Defaults to weight 400
+import "@fontsource/dm-sans/500.css"; // For weight 500
+import "@fontsource/dm-sans/700.css"; // For weight 700
+
+
 
 
 

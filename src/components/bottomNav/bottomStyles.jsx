@@ -4,19 +4,19 @@ export const StyledBottomNav = () =>{
     const myTheme = useTheme()
     return{
         bottomNavFirstGrid:{
-            padding: { md: "20px 64px", xs: "8px 16px" },
-            borderTop: "2px solid #CACFDB",
+            padding: { md: "1.25rem 4rem", xs: "0.5rem 1rem" },
+            borderTop: "0.125rem solid #CACFDB",
           },
           bottomNavFirstBox:{
             display: "flex",
             justifyContent: "space-between",
             flexDirection: { md: "row", xs: "column" },
-            rowGap: "16px",
+            rowGap: "1rem",
           },
           bottomNavFirstText:{
             fontSize: myTheme.typography.fontSize.text14,
             fontWeight: myTheme.typography.fontWeight.medium,
-            lineHeight: "18px",
+            lineHeight: "1.125rem",
             fontFamily: myTheme.typography.fontFamily.text2,
             color: myTheme.textColor.tertiary,
             

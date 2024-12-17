@@ -21,23 +21,33 @@ export default function Screen1() {
       const TeamDiv = useRef(null);
       const InvestDiv = useRef(null);
       const ContactDiv = useRef(null);
-    const screens =[
-      {head:<Home/>, link:HomeDiv},
+    
+      
+    
+
+      const handleScrollTo = (ref) => {
+        const offset = 120; // Height of the fixed header
+        const top = ref.current.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: "smooth" });
+      };
+    
+   const screens =[
+      {head:<Home onNavigate={(section)=>handleScrollTo(section)} sections={{
+        section1 : HomeDiv,
+        section2 : AboutDiv,
+        section3 : TeamDiv,
+        section4 : InvestDiv,
+        section5 : ContactDiv,
+      }}/>, link:HomeDiv},
       {head:<AboutUs/> ,link:AboutDiv},
       {head:<OurTeam/> ,link:TeamDiv},
       {head:<InvestmentApproach/> ,link:InvestDiv},
       {head: <ContactUs/>,link:ContactDiv},
     ]
-      
     
-
-    const handleScrollTo = (ref) => {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
-    };
-    
-   
   return (
     <Grid >
+      <Grid sx={{position:"fixed" ,zIndex:10 , width:"-webkit-fill-available" , background:"#FFFFFF" , top:0}}>
       <TopNav onNavigate={(section)=>handleScrollTo(section)} sections={{
         section1 : HomeDiv,
         section2 : AboutDiv,
@@ -45,6 +55,7 @@ export default function Screen1() {
         section4 : InvestDiv,
         section5 : ContactDiv,
       }}/>
+      </Grid>
       <Grid sx={styles.screenFirstGrid}   >
       {screens.map((element,index)=>{
         return(

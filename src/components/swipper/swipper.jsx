@@ -20,6 +20,7 @@ import { StyledSwiper } from "./swiperStyles";
 export default function swipper(props) {
   const styles = StyledSwiper();
   const TeamData = props.TeamData;
+  
   // console.log(TeamData)
   return (
     <Grid
@@ -33,7 +34,7 @@ export default function swipper(props) {
         }}
         breakpoints={{
           1440: {
-            spaceBetween: 180,
+            spaceBetween: 116,
             slidesPerView: 1.33,
             pagination: false,
             height: "450px",
@@ -62,8 +63,8 @@ export default function swipper(props) {
       >
         {TeamData.map((element, index) => {
           return (
-            <SwiperSlide key={index}>
-              <TeamCards TeamData={element}  />
+            <SwiperSlide key={index} className="components">
+              <TeamCards TeamData={element} />
             </SwiperSlide>
           );
         })}

@@ -7,8 +7,9 @@ export const StyledInvestment = () => {
       margin: "auto",
       backgroundColor: myTheme.colors.primary.lite,
       maxWidth: { lg: "1318px", md: "903px" },
+      
     },
-    investSecondGrid: { padding: "64px 0px" },
+    investSecondGrid: { padding: "1rem 0rem 2rem 0rem" },
     investFirstText: {
       fontWeight: myTheme.typography.fontWeight.bolder,
       fontSize: myTheme.typography.fontSize.text32,
@@ -42,6 +43,7 @@ export const StyledInvestment = () => {
       fontFamily: myTheme.typography.fontFamily.text1,
       fontSize: myTheme.typography.fontSize.text18,
       lineHeight: "22px",
+      paddingTop:"16px"
     },
     investThirdText: {
       fontWeight: myTheme.typography.fontWeight.medium,
@@ -50,8 +52,8 @@ export const StyledInvestment = () => {
       lineHeight: "20px",
       color: myTheme.textColor.tertiary,
     },
-    investThirdGrid: { display: { xs: "block", sm: "none" } },
-    investThirdBox: {
+    investThirdGrid: { display: { xs: "block", sm: "none" } ,   },
+     investThirdBox: {
       display: { xs: "flex ", lg: "none" },
       justifyContent: "center",
       padding: "32px 0px",

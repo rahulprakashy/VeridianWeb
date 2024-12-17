@@ -5,10 +5,10 @@ export const StyledNavContents = () =>{
     return{
         navContentsFirstGrid:{
             display: "flex",
-            rowGap: { xs: "24px", md: "0px" },
+            rowGap: { xs: "1.5rem", md: "0rem" },
           },
           navContentsFirstBox:{ display: "inline-flex" },
-          navContentsSecondBox:{ marginLeft: "24px" },
+          navContentsSecondBox:{ marginLeft: "1.5rem" },
           navContentsFirstText:{
             cursor: "pointer",
             transition: "1.s ease",
@@ -16,7 +16,7 @@ export const StyledNavContents = () =>{
             
           },
           navContentsThirdBox:{
-            height: "4px",
+            height: "0.25rem",
             transition: "1s ease",
             display: { xs: "none", md: "block" },
           },

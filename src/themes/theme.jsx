@@ -37,15 +37,15 @@ export const myTheme = createTheme({
             bold:600,
            },
            fontSize:{
-                text14:"14px",
-                text12:"12px",
-            
-                text26:"26px",
-                text20:"20px",
-                text18:"18px",
-                text48:"48px",
-                text40:"40px",
-                text32:"32px",
+                text14:"0.875rem",
+                text12:"0.75rem",
+                text16:"1rem",
+                text26:"1.625rem",
+                text20:"1.25rem",
+                text18:"1.125rem",
+                text48:"3rem",
+                text40:"2.5rem",
+                text32:"2rem",
             
            },
 

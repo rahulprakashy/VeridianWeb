@@ -1,4 +1,4 @@
-import { Avatar, Box, Grid2 as Grid } from "@mui/material";
+import { Avatar,  Grid2 as Grid } from "@mui/material";
 import React, { useState } from "react";
 import Logo from "../../assets/images/logo.png";
 import NavContents from "../navContents/navContents";
@@ -24,6 +24,7 @@ export default function TopNav({ onNavigate, sections }) {
         <Avatar
           src={Logo}
           sx={styles.topNavFirstImage}
+          
         />
         <Avatar
           src={openNav ? CloseIcon : MenuIcon}
@@ -44,6 +45,7 @@ export default function TopNav({ onNavigate, sections }) {
           src={openNav ? CloseIcon : MenuIcon}
           sx={styles.topNavThirdImage}
           onClick={HandleOpenNavBar}
+          
         />
       </Grid>
       <Grid

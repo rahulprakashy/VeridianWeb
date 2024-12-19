@@ -48,7 +48,7 @@ export const StyledContactUsPage = () =>{
           contactThirdBox:{
             display: "flex",
             alignItems: "center",
-            padding: "14px 24px",
+            padding: "8px 16px",
             columnGap: "0.625rem",
           },
           contactThirdText:{
@@ -58,6 +58,7 @@ export const StyledContactUsPage = () =>{
             fontFamily: myTheme.typography.fontFamily.text2,
             fontSize: myTheme.typography.fontSize.text12,
             lineHeight: "16px",
+            whiteSpace:"nowrap"
           },
           contactFourthText:{
             fontWeight: myTheme.typography.fontWeight.bold,
@@ -75,7 +76,7 @@ export const StyledContactUsPage = () =>{
               overflow: "visible",
             },
             backgroundColor: "#0000002d",
-            padding: "0.625rem",
+            padding: "8px",
           },
           contactSecondImage:{
             borderRadius: 0,

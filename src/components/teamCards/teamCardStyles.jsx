@@ -3,13 +3,15 @@ import { useTheme } from "@mui/material";
 export const StyledTeamCard = () => {
   const myTheme = useTheme();
   return {
-    teamCardFirstGrid: { margin: { lg: "0rem 7.53rem" } },
+    teamCardFirstGrid: { margin: { lg: "0rem 7.53rem" } , height:"-webkit-fill-available" , display:{xs:"flex" , lg:"block"} },
     teamCardFirstBox: {
-      height: { lg: "25.438rem", xs:"870px"},
+      height: { lg: "25.438rem"},
       width: { lg: "63.576rem", md: "26.563rem" },
       backgroundColor: myTheme.colors.white,
       transform: { lg: "skew(-30deg)" },
       overflow: "hidden",
+     
+      // margin:{xs:"0px 16px"}
       
     },
     teamCardSecondGrid: {
@@ -20,11 +22,12 @@ export const StyledTeamCard = () => {
       flexDirection: { lg: "row", xs: "column" },
     },
     teamCardSecondBox: {
-      position: "absolute",
+      position: {lg:"absolute" , xs:"relative"},
       bottom: 0,
-      display: { lg: "flex", xs: "block" },
-      alignItems: { lg: "flex-end", xs: "unset" },
-      left:{lg:"18px"}
+      display: "flex",
+      alignItems: { lg: "flex-end", xs: "center" },
+      left:{lg:"18px"},
+      flexDirection:{xs:"column" , lg:"row"}
     },
     teamCardFirstImage: {
       height: { lg: "fit-content", xs: "355px" },
@@ -34,25 +37,25 @@ export const StyledTeamCard = () => {
       zIndex: 3,
       ".MuiAvatar-img": { objectFit: "contain" },
     },
-    teamCardThirdBox: {
+      teamCardThirdBox: {
       backgroundColor: myTheme.colors.primary.default,
       height: "4.25rem",
       alignItems: "center",
       display: "flex",
       position: "relative",
       bottom: 0,
-      padding: { lg: "0rem 0rem", xs: "0rem 0.25rem 0rem 2.2rem" , sm:"0rem" },
+      padding: { lg: "0rem 0rem", xs: "0rem 3.25rem 0rem 8.2rem" , sm:"0rem 8rem" , md:"0rem 7rem" },
       flexDirection: "column",
       justifyContent: "center",
       whiteSpace: "nowrap",
-      right: { lg: "2.5rem", md: "2.5rem", sm: "5rem", xs: "6.875rem" },
+      right: { lg: "2.5rem", md: "4.5rem", sm: "5rem", xs: "5.2rem" },
       transform: { lg: "skew(-5deg)", xs: "skew(-50deg)" },
-      width: { md: "95%", xs: "110%" , lg:"330px" },
-      left:"18px",
+      width: { md:"fit-content", xs: "auto" , lg:"330px" },
+      left:{lg:"18px",},
       
     },
     teamCardFirstText: {
-      transform: { lg: "skew(25deg)", xs: "skew(50deg)" },
+      
       fontFamily: myTheme.typography.fontFamily.text1,
       fontWeight: myTheme.typography.fontWeight.semiBold,
       fontSize: myTheme.typography.fontSize.text18,
@@ -60,7 +63,7 @@ export const StyledTeamCard = () => {
       color: myTheme.colors.white,
     },
     teamCardSecondText: {
-      transform: { lg: "skew(25deg)", xs: "skew(50deg)" },
+      
       fontFamily: myTheme.typography.fontFamily.text2,
       fontWeight: myTheme.typography.fontWeight.medium,
       fontSize: myTheme.typography.fontSize.text14,
@@ -70,7 +73,7 @@ export const StyledTeamCard = () => {
     teamCardFourthBox: {
       width: { lg: "674px", xs: "auto" },
       transform: { lg: "skew(30deg)", xs: "none" },
-      position: "absolute",
+      position: {lg:"absolute" , xs:"relative"},
       padding: { lg: "2.188rem 0rem", xs: "0.5rem 1rem" },
       rowGap: "0.625rem",
       display: "flex",

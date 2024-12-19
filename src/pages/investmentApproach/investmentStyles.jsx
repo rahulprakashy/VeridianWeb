@@ -33,8 +33,8 @@ export const StyledInvestment = () => {
       rowGap: { xs: "24px", md: "0px" },
     },
     investFirstImage: {
-      height: { lg: "184px", md: "194px", xs: "184px" },
-      width: { lg: "333px", md: "184px", xs: "100%" },
+      height: { lg: "201px",  xs: "184px" },
+      width: { lg: "318px", xs: "100%" },
       borderRadius: 0,
       ".MuiAvatar-img": { objectFit: "contain" },
     },

@@ -129,8 +129,8 @@ export default function InvestmentApproach() {
         >
           {GroupData.map((element, index) => {
             return (
-              <SwiperSlide key={index}>
-                <InvestmentCard GroupData={element} />
+              <SwiperSlide key={index} className="investment">
+                <InvestmentCard GroupData={element}  />
               </SwiperSlide>
             );
           })}

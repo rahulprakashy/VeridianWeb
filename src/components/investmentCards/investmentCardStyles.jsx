@@ -10,7 +10,7 @@ export const StyledInvestmentCard = () =>{
             flexDirection: "column",
             alignItems: "center",
             rowGap: { xs: "1.5rem", md: "0rem" },
-            height: "594px",
+            
           },
           cardFirstImage:{
             height: { lg: "11.5rem", md: "12.125rem", xs: "11.5rem" },
@@ -31,6 +31,10 @@ export const StyledInvestmentCard = () =>{
             lineHeight: "1.25rem",
             color: myTheme.textColor.tertiary,
           },
+          cardFirstGrid:{
+            display:"flex" ,
+            height:"-webkit-fill-available",
+          }
 
     }
 }

@@ -24,6 +24,7 @@ export default function TeamCards(props) {
             <Box
               sx={styles.teamCardThirdBox}
             >
+              <Box sx={{display:"flex" , alignItems:"flex-start" ,transform:{lg:"skew(35deg)" , xs:"skew(50deg)"},flexDirection:"column"}}>
               <Typography
                 sx={styles.teamCardFirstText}
               >
@@ -34,6 +35,7 @@ export default function TeamCards(props) {
               >
                 {element.design}
               </Typography>
+              </Box>
             </Box>
           </Box>
           <Box

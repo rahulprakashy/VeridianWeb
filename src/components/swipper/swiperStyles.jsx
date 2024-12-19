@@ -9,6 +9,7 @@ export const StyledSwiper = () =>{
             justifyContent: "center",
             position: "relative",
             flexDirection: { lg: "row", xs: "column" },
+            margin:"0px 16px",
           },
           swiperFirstImage:{
             position: "absolute",

@@ -6,7 +6,7 @@ export default function InvestmentCard(props) {
   const styles = StyledInvestmentCard()
     const element = props.GroupData
   return (
-    <Grid>
+    <Grid sx={styles.cardFirstGrid}>
     <Box
       sx={styles.cardFirstBox}
     >

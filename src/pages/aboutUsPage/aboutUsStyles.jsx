@@ -50,7 +50,7 @@ export const StyledAboutUs = () =>{
             height: { md: "9.25rem", xs: "9.188rem" },
             borderRadius: 0,
             backgroundColor: "#CFE1DF",
-            padding: { md: "1.75rem 6.25rem", xs: "1rem 5rem" },
+            padding: { md: "1.75rem 6.25rem", xs: "1rem 4rem" , sm:"1.5rem 5.75rem" },
             justifyContent: "center",
           },
           aboutSecondText:{
